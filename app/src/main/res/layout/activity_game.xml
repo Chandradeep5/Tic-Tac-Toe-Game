@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blur_wallpaper"
+    tools:context=".TwoVTwoActivity">
+
+    <!-- Frosted glass overlay -->
+    <View
+        android:id="@+id/frostOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCFFFFFF"
+        android:alpha="0.4" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:shadowColor="#33FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- Player Status -->
+    <TextView
+        android:id="@+id/tvPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X’s Turn"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Game Grid -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPlayers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/controlLayout">
+
+        <!-- 9 Frosted Glass Buttons -->
+        <Button
+            android:id="@+id/btn00"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn01"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn02"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn10"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn11"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn12"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn20"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn21"
+            style="@style/GlassButtonStyle" />
+        <Button
+            android:id="@+id/btn22"
+            style="@style/GlassButtonStyle" />
+    </GridLayout>
+
+    <!-- 2v2 Mode Layout (Newly Added) -->
+    <LinearLayout
+        android:id="@+id/twoVTwoLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/glow_button"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/controlLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv2v2Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 vs 2 Mode"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnStart2v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start 2v2 Match"
+            style="@style/GlassSmallButtonStyle" />
+    </LinearLayout>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:id="@+id/controlLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:text="Restart"
+            style="@style/GlassSmallButtonStyle"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:text="Exit"
+            style="@style/GlassSmallButtonStyle" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

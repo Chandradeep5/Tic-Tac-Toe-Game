@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/botLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_wallpaper"
+    tools:context=".BotActivity">
+
+    <!-- Frosted Glass Main Container -->
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="32dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/bg_glass_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Smart Bot"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Turn Status -->
+        <TextView
+            android:id="@+id/tvTurnStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Your Turn"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <!-- Player and Bot Icons Row -->
+        <LinearLayout
+            android:id="@+id/playerIconsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="40dp">
+
+            <!-- User Icon (customizable) -->
+            <ImageView
+                android:id="@+id/playerUserIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:background="@drawable/glow_icon_background"
+                android:contentDescription="@string/user_icon"
+                android:padding="8dp"
+                android:src="@drawable/ic_ironman" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Bot Icon (fixed) -->
+            <ImageView
+                android:id="@+id/playerBotIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:background="@drawable/glow_icon_background"
+                android:contentDescription="@string/bot_icon"
+                android:padding="8dp"
+                android:src="@drawable/ic_bot_default" />
+        </LinearLayout>
+
+        <!-- Winner Display -->
+        <TextView
+            android:id="@+id/tvWinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:gravity="center" />
+
+        <!-- Tic Tac Toe Grid -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <Button android:id="@+id/btn00" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn01" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn02" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn10" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn11" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn12" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn20" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn21" style="@style/GridButtonStyle" />
+            <Button android:id="@+id/btn22" style="@style/GridButtonStyle" />
+        </GridLayout>
+
+        <!-- Control Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRestart"
+                android:text="Restart"
+                style="@style/ControlButtonStyle" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_marginStart="16dp"
+                android:text="Exit"
+                style="@style/ControlButtonStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

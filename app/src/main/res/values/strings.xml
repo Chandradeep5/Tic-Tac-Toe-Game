@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!-- Titles -->
+    <string name="title_two_v_two">Two V Two</string>
+    <string name="title_smart_bot">Smart Bot</string>
+
+    <!-- Player Turn Status -->
+    <string name="turn_player_x">Player X’s Turn</string>
+    <string name="turn_player_o">Player O’s Turn</string>
+    <string name="turn_user">Your Turn</string>
+    <string name="turn_bot">Bot’s Turn</string>
+
+    <!-- Winner / Result Messages -->
+    <string name="winner_player_x">Player X Wins!</string>
+    <string name="winner_player_o">Player O Wins!</string>
+    <string name="winner_user">You Win!</string>
+    <string name="winner_bot">Bot Wins!</string>
+    <string name="draw_message">It’s a Draw!</string>
+
+    <!-- Button Text -->
+    <string name="btn_restart">Restart</string>
+    <string name="btn_exit">Exit</string>
+
+    <!-- Accessibility / Descriptions -->
+    <string name="user_icon">User Icon</string>
+    <string name="bot_icon">Bot Icon</string>
+    <string name="player_x_icon">Player X Icon</string>
+    <string name="player_o_icon">Player O Icon</string>
+    <string name="settings_icon">Settings Icon</string>
+
+    <!-- Settings Page Text -->
+    <string name="settings_title">Settings</string>
+    <string name="choose_wallpaper">Choose Wallpaper</string>
+    <string name="choose_text_style">Choose Text Style</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="apply_theme">Apply Theme</string>
+
+    <!-- General Messages -->
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="restart_message">Game Restarted!</string>
+    <string name="loading_message">Loading...</string>
+
+</resources>
