@@ -28,11 +28,11 @@ Designed for an engaging, intuitive, and enjoyable user experience.
 
 | 🏠 Main Page | 👥 2v2 Page | 🧑‍🤝‍🧑 2v2 Avatars |
 |:-------------:|:-------------:|:-------------:|
-| ![Main Page](screenshots/home_screen.png) | ![2v2 Page](screenshots/2v2_game1.png) | ![2v2 Avatar](screenshots/customized_avatar.png) |
+| ![Main Page](screenshots/home_screen.jpg) | ![2v2 Page](screenshots/2v2_game1.jpg) | ![2v2 Avatar](screenshots/customized_avatar.jpg) |
 
 | 🎯 2v2 Gameplay | 🤖 Bot Mode | ⚙️ Settings Page |
 |:-------------:|:-------------:|:-------------:|
-| ![Gameplay](screenshots/2v2_game2.png) | ![Bot Mode](screenshots/bot_game.png) | ![Settings](screenshots/wallpaper_text.png) |
+| ![Gameplay](screenshots/2v2_game2.jpg) | ![Bot Mode](screenshots/bot_game.jpg) | ![Settings](screenshots/wallpaper_text.jpg) |
 
 ---
 
