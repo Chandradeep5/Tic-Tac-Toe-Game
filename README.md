@@ -11,7 +11,7 @@
 ---
 
 <p align="center">
-  <img src="screenshots/home_screen.png" alt="Tic Tac Toe Banner" width="85%" style="border-radius: 10px;">
+  <img src="screenshots/game_icon.jpg" alt="Tic Tac Toe Banner" width="85%" style="border-radius: 10px;">
 </p>
 
 ---
